@@ -2,6 +2,6 @@ import React from 'react';
 
 export const TodoSearch = () => {
     return (
-        <input type="text" placeholder="Agregar tarea" />
+        <input className="TodoSearch" type="text" placeholder="Agregar tarea" />
     )
 }
