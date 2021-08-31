@@ -40,7 +40,7 @@ export const App = () => {
             searchValue={searchValue}
             setSearchValue={setSearchValue} />
             <TodoList>
-                { todos.map( (todo) => (
+                { searchedTodos.map( (todo) => (
                     <TodoItem 
                         key={todo.id}
                         text={todo.text}
