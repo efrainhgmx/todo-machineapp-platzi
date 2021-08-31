@@ -14,7 +14,7 @@ const defaultTodos = [
 
 export const App = () => {
     const [todos, setTodos] = useState(defaultTodos);
-    const [searchValue, setSearchValue] = usaState("");
+    const [searchValue, setSearchValue] = useState("");
 
     const completedTodos = todos.filter( todo => !!todo.completed);
     const totalTodos = todos.length;
@@ -31,6 +31,15 @@ export const App = () => {
         });
     }
 
+    const completeTodos = (text) => {
+        const todoIndex = todos.findIndex(todo => todo.text === text);
+
+        const newTodos = [...todos];
+        newTodos[todoIndex].completed = true;
+
+        setTodos(newTodos);
+    };
+
     return (
         <>
             <TodoCounter 
@@ -45,6 +54,7 @@ export const App = () => {
                         key={todo.id}
                         text={todo.text}
                         completed={todo.completed}
+                        onCompleted={() => completeTodos(todo.text)}
                     />
                 ))}
             </TodoList>
