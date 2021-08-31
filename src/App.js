@@ -40,6 +40,15 @@ export const App = () => {
         setTodos(newTodos);
     };
 
+    const deleteTodo = (text) => {
+        const todoIndex = todos.findIndex(todo => todo.text === text);
+
+        const newTodos = [...todos];
+        newTodos.splice(todoIndex, 1);
+
+        setTodos(newTodos);
+    };
+
     return (
         <>
             <TodoCounter 
@@ -55,6 +64,7 @@ export const App = () => {
                         text={todo.text}
                         completed={todo.completed}
                         onCompleted={() => completeTodos(todo.text)}
+                        onDeleted={() => deleteTodo(todo.text)}
                     />
                 ))}
             </TodoList>
