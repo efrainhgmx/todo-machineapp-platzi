@@ -1,4 +1,5 @@
 import React from 'react';
+import { CreateTodoButton } from './components/CreateTodoButton/CreateTodoButton';
 import { TodoCounter } from './components/TodoCounter/TodoCounter';
 import { TodoItem } from './components/TodoItem/TodoItem';
 import { TodoList } from './components/TodoList/TodoList';
@@ -25,6 +26,7 @@ export const App = () => {
                     />
                 ))}
             </TodoList>
+            <CreateTodoButton/>
         </>
     )
 }
