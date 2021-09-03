@@ -6,9 +6,9 @@ import { TodoList } from './components/TodoList/TodoList';
 import { TodoSearch } from './components/TodoSearch/TodoSearch';
 
 const defaultTodos = [
-    { id: 1, text: "Ir al cine por palomitas", completed: false},
-    { id: 2, text: "Leer un libro", completed: false},
-    { id: 3, text: "Estudiar un poco más spbre React", completed: false},
+    { text: "Ir al cine por palomitas", completed: false},
+    { text: "Leer un libro", completed: false},
+    { text: "Estudiar un poco más spbre React", completed: false},
     
 ]
 
