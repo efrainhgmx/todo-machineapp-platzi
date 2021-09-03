@@ -60,7 +60,7 @@ export const App = () => {
             <TodoList>
                 { searchedTodos.map( (todo) => (
                     <TodoItem 
-                        key={todo.id}
+                        key={todo.text}
                         text={todo.text}
                         completed={todo.completed}
                         onCompleted={() => completeTodos(todo.text)}
