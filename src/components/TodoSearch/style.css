@@ -22,3 +22,7 @@
   .TodoSearch:focus {
     outline-color: #61DAFA;
   }
+
+  p {
+    text-align: center;
+  }
