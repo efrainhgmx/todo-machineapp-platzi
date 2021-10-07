@@ -43,8 +43,21 @@ function TodoProvider(props) {
       };
 
     return (
-        <TodoContext.Provider value={}>
+        <TodoContext.Provider value={{
+            error,
+            loading,
+            totalTodos,
+            completedTodos,
+            searchValue,
+            setSearchValue,
+            searchedTodos,
+            completeTodo,
+            deleteTodo,
+        }}
             {props.children}
         </TodoContext.Provider>
-    )
+    );
+
 }
+
+export { TodoContext, TodoProvider }
