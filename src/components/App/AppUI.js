@@ -41,7 +41,7 @@ function AppUI() {
       </TodoList>
 
       <Modal>
-        <p>Hola</p>
+        <p>{searchedTodos[0].text}</p>
       </Modal>
 
       <CreateTodoButton />
