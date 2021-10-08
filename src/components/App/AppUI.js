@@ -5,6 +5,7 @@ import { TodoSearch } from '../TodoSearch/TodoSearch.js';
 import { TodoList } from '../TodoList/TodoList.js';
 import { TodoItem } from '../TodoItem/TodoItem.js';
 import { CreateTodoButton } from '../CreateTodoButton/CreateTodoButton.js';
+import { Modal } from '../Modal/index';
 
 function AppUI() {
 
@@ -38,6 +39,10 @@ function AppUI() {
           />
         ))}
       </TodoList>
+
+      <Modal>
+        <p>Hola</p>
+      </Modal>
 
       <CreateTodoButton />
     </React.Fragment>
