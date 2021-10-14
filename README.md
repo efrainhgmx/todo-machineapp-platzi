@@ -3,3 +3,6 @@
 **Aplicacion de lista de To do en React del curso de Introducción a React de Platzi**
 
 !["TodoMachine App"](./readme-image.png)
+
+
+👉 [Click para ver el proyecto Final](https://efrainhgmx.com/todo-machineapp-platzi/)
