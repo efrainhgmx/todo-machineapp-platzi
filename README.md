@@ -4,5 +4,6 @@
 
 !["TodoMachine App"](./readme-image.png)
 
+- Uso de React Context
 
 👉 [Click para ver el proyecto Final](https://efrainhgmx.com/todo-machineapp-platzi/)
